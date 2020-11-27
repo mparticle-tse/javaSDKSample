@@ -47,6 +47,9 @@ public class MainActivity extends AppCompatActivity {
                     userAttributes.put("foo", "us");
                     batch.userAttributes(userAttributes);
 
+
+
+                    //Commerce Action
                     Product product = new Product()
                             .totalProductAmount(new BigDecimal("123.12"))
                             .id("product-id")
@@ -59,8 +62,18 @@ public class MainActivity extends AppCompatActivity {
                     CommerceEvent event = new CommerceEvent().data(
                             new CommerceEventData().productAction(action)
                     );
-
                     batch.addEventsItem(event);
+
+                    //Custom Event
+                    Map customAttributes = new HashMap<>();
+                    customAttributes.put("foo", "bar");
+                    CustomEvent event2 = new CustomEvent().data(
+                            new CustomEventData()
+                                    .eventName("My Custom Event Name")
+                                    .customEventType(CustomEventData.CustomEventType.LOCATION)
+                    );
+                    event2.getData().customAttributes(customAttributes);
+                    batch.addEventsItem(event2);
 
 
 
