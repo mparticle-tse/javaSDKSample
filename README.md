@@ -1,3 +1,5 @@
+<img src="https://static.mparticle.com/sdk/mp_logo_black.svg" width="280">
+
 # Java SDK Sample
 This Andorid app operates as a "proxy" Java backend using the [Java SDK](https://github.com/mParticle/mparticle-java-events-sdk)
 
