@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 try  {
-                    EventsApi api = new ApiClient("us1-4e27eceae24a0c4a85f014ec98de88b0", "ER3fm1YjEPg55IZueBgZj5-i5qjuygEw1lI-z_KiLMEu2HlINKdxMbI4X6GsZ772")
+                    EventsApi api = new ApiClient("API KEY", "SECRET")
                             .createService(EventsApi.class);
                     Batch batch = new Batch();
                     batch.environment(Batch.Environment.DEVELOPMENT);
