@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                     //Commerce Action
+                    // This is a Commerce Action to be clear!
                     Product product = new Product()
                             .totalProductAmount(new BigDecimal("123.12"))
                             .id("product-id")
